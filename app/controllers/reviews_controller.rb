@@ -25,6 +25,8 @@ class ReviewsController < ApplicationController
   # GET /reviews/new.json
   def new
     @review = Review.new
+    @passed_product = Product.find(params[:id]) if params[:id]
+    @products = Product.all
 
     respond_to do |format|
       format.html # new.html.erb

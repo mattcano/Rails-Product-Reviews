@@ -10,6 +10,12 @@
   <%= @product.price %>
 </p>
 
+<form action="/reviews/new" method="get">
+  <input type="hidden" name="id" value="<%= @product.id %>">
+  <input type="submit" value="Review This Item!">
+</form>
+
+<p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

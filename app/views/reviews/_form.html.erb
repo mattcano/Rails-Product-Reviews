@@ -20,8 +20,22 @@
     <%= f.text_field :rating %>
   </div>
   <div class="field">
-    <%= f.label :product_id %><br />
-    <%= f.number_field :product_id %>
+
+    <% if params[:id] %>
+
+      <input type="hidden" name="review[product_id]" value = "<%= params[:id] %>">
+    
+    <% else %>
+
+      <%= f.label :product_id %><br />
+      <select name="review[product_id]">
+        <% @products.each do |product| %>
+          <option value="<%= product.id %>">
+          <%= product.name %>  
+        <% end %>
+      </select>
+
+    <% end %>  
   </div>
   <div class="actions">
     <%= f.submit %>
