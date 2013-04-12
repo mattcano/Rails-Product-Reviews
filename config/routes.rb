@@ -3,6 +3,6 @@ Products::Application.routes.draw do
 
   resources :products
 
-  # root :to => 'products#show'
+  root :to => 'products#index'
 
 end
