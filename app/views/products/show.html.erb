@@ -5,14 +5,27 @@
   <%= @product.name %>
 </p>
 
+
+<!-- add a placeholder image when image is not available -->
+<p>
+  <%= image_tag(@product.image_url, :width => "300px", :alt => @product.name) if @product.image_url %>
+</p>
+
 <p>
   <b>Price:</b>
   <%= @product.price %>
 </p>
 
+<p>
+  <b>Decription:</b>
+  <%= @product.description %>
+</p>
+
 <b>Reviews:</b>
 
 <% counter = 1 %>
+  
+<!-- consider using an OL instead of a counter here! -->
 
 <% @reviews.each do |r| %>
   <p><%= counter.to_s + ". Rating: " + r.rating.to_s%>
@@ -22,7 +35,7 @@
 
 <form action="/reviews/new" method="get">
   <input type="hidden" name="id" value="<%= @product.id %>">
-  <input type="submit" value="Review This Item!">
+  <input type="submit" value="Review This Item!" class="btn btn-primary btn-small">
 </form>
 
 <p>
