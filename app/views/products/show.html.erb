@@ -15,7 +15,8 @@
 <% counter = 1 %>
 
 <% @reviews.each do |r| %>
-  <p><%= counter.to_s + ". " %><%= link_to(r.body, review_path(r)) %>
+  <p><%= counter.to_s + ". Rating: " + r.rating.to_s%>
+  <br /><%= link_to(r.body, review_path(r)) %>
   <% counter +=1 %>
 <% end %>
 
