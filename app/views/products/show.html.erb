@@ -10,6 +10,15 @@
   <%= @product.price %>
 </p>
 
+<b>Reviews:</b>
+
+<% counter = 1 %>
+
+<% @reviews.each do |r| %>
+  <p><%= counter.to_s + ". " %><%= link_to(r.body, review_path(r)) %>
+  <% counter +=1 %>
+<% end %>
+
 <form action="/reviews/new" method="get">
   <input type="hidden" name="id" value="<%= @product.id %>">
   <input type="submit" value="Review This Item!">
