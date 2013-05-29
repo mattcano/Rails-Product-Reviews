@@ -11868,3 +11868,183 @@ Served asset /reviews.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-12 13:19:47 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-28 17:15:18 -0700
+Served asset /rails.png - 200 OK (179ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-28 17:29:49 -0700
+Served asset /rails.png - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-28 17:31:50 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."in_cart" = 't'[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 269ms (Views: 188.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 17:31:51 -0700
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 17:31:51 -0700
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 17:31:51 -0700
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-05-28 17:31:51 -0700
+Served asset /products.css - 200 OK (29ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-05-28 17:31:51 -0700
+Served asset /products.js - 200 OK (4ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-05-28 17:31:51 -0700
+Served asset /reviews.css - 200 OK (3ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-05-28 17:31:51 -0700
+Served asset /reviews.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 17:31:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 17:31:51 -0700
+Served asset /application.js - 200 OK (113ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2013-05-28 17:34:06 -0700
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."in_cart" = 't'[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = 5[0m
+  Rendered products/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 65ms (Views: 56.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/reviews/new?id=5" for 127.0.0.1 at 2013-05-28 17:34:10 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."in_cart" = 't'
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered reviews/_form.html.erb (4.6ms)
+  Rendered reviews/new.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 179ms (Views: 159.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:11 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."in_cart" = 't'[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 144ms (Views: 128.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Served asset /products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."in_cart" = 't'[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 124ms (Views: 121.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Served asset /reviews.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 17:34:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
